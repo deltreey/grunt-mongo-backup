@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.registerTask("mongobackup", "Grunt task for binary export of mongodb database", function(task) {
+  grunt.registerMultiTask("mongobackup", "Grunt task for binary export of mongodb database", function(task) {
 	  
 	if (arguments.length === 0) {
 		grunt.log.writeln(this.name + ", no args");
